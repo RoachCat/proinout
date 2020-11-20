@@ -1,0 +1,858 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(11, 11, 11);
+}
+
+@font-face{
+    font-family: "steelfish";
+    src: url(font-styles/steelfish.ttf);
+}
+
+@font-face{
+    font-family: "tomatoround";
+    src: url(font-styles/TomatoRoundCondensed.ttf);
+}
+
+@font-face{
+    font-family: "grotesk";
+    src: url(font-styles/HKGrotesk-Medium.otf);
+}
+
+@font-face{
+    font-family: "grotesk-titles";
+    src: url(font-styles/HKGrotesk-Bold.otf);
+}
+
+@font-face{
+    font-family: "grotesk-content";
+    src: url(font-styles/HKGrotesk-Light.otf);
+}
+
+.main-page{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menubox{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1.5em 0 4em 0;
+}
+
+.main-menu{
+    width: 100%;
+    font-family: "tomatoround";
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(254, 255, 228);
+}
+
+.main-menu a{
+    text-decoration: none;
+    color: rgb(254, 255, 228);
+}
+
+.main-menu li{
+    padding: 0 2em 0 2em;
+    display: inline;
+}
+
+.main-menu li:hover{
+    padding: 5px 2em 2px 2em;
+    color: rgb(11, 11, 11);
+    background-color: rgb(254, 255, 228);
+    cursor: pointer;
+}
+
+.logo__container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-box__logo{
+    width: 20%;
+    min-width: 10em;
+}
+
+.logo-box__titlebox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 33%;
+    margin-left: 2em;
+}
+
+.logo-box__title{
+    display: block;
+    margin: 0;
+    letter-spacing: 0.078em;
+    transform: scaleY(0.87);
+    color: rgb(254, 255, 228);
+    font-size: 6.8em;
+    font-family: "steelfish";
+    font-weight: lighter;
+}
+
+.logo-box__subtitle{
+    margin-top: -0.6em;
+    margin-bottom: 0;
+    letter-spacing: 0.278em;
+    transform: scaleY(0.9);
+    color: rgb(254, 255, 228);
+    font-family: "tomatoround";
+    font-weight: lighter;
+}
+
+.main__quoteBox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    font-family: grotesk;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(254, 255, 228);
+}
+
+.quoteBox{
+    text-align: center;
+    width: 100%;
+    padding-top: 2.2em;
+    padding-bottom: 3.6em;
+}
+
+.quienesSomos-box{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0.4em;
+}
+
+.watermark{
+    position: absolute;
+    margin-left: 2em;
+    min-width: 13em;
+    width: 15%;
+    opacity: 0.5;
+}
+
+.emptyBox{
+    width: 100%;
+    padding-top: 6.7em;
+}
+
+.quienesSomos__img-box{
+    width: 35%;
+}
+
+.quienesSomos__img-box img{
+    width: 100%;
+    border-top-right-radius: 5%;
+}
+
+.quienesSomos__description-box{
+    width: 64%;
+    color: rgb(254, 255, 228);
+}
+
+.quienesSomos__description-box h2{
+    margin: 0;
+    padding-left: 0.6em;
+    font-family: "grotesk-titles";
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.quienesSomos__description-box span{
+    font-family: "grotesk-titles";
+    font-size: 60px;
+    color: rgb(46, 184, 114);
+}
+
+.quienesSomos__description-box p{
+    padding-left: 2em;
+    padding-right: 15em;
+    font-size: 20px;
+    line-height: 1.4em;
+    font-family: "grotesk-content";
+}
+
+.green-lines{
+    position: absolute;
+    top: 31.5em;
+    z-index: -1;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery__text-box{
+    padding-top: 9em;
+    width: 45%;
+    text-align: left;
+    color: rgb(254, 255, 228);
+}
+
+.gallery__text-box h2{
+    margin-bottom: 0;
+    padding-left: 0.7em;
+    font-family: "grotesk-titles";
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.gallery__text-box span{
+    font-family: "grotesk-titles";
+    font-size: 60px;
+    color: rgb(46, 184, 114);
+}
+
+.gallery__text-box p{
+    padding-left: 2.3em;
+    padding-right: 2em;
+    font-size: 20px;
+    line-height: 1.4em;
+    font-family: "grotesk-content";
+}
+
+.gallery__images{
+    display: flex;
+    width: 53%;
+}
+
+.images__col1{
+    width: 50%;
+}
+
+.images__col1 img{
+    padding: 5px;
+    border-radius: 8%;
+}
+
+.images__col2{
+    width: 50%;
+}
+
+.images__col2 img{
+    padding: 5px;
+    padding-left: 12px;
+    border-radius: 8%;
+}
+
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services .watermark{
+    right: 2em;
+}
+
+.services__title-box{
+    padding-top: 3em;
+    color: rgb(254, 255, 228);
+}
+
+.services__title-box h2{
+    margin-bottom: 0;
+    font-family: "grotesk-titles";
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.services__title-box span{
+    font-family: "grotesk-titles";
+    font-size: 60px;
+    color: rgb(46, 184, 114);
+}
+
+.services__images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 2em;
+}
+
+.services__images div{
+    width: 22%;
+}
+
+.services__images div img{
+    width: 100%;
+    border-radius: 8%;
+}
+
+.services__phone{
+    display: none;
+}
+
+.services__text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 1em;
+}
+
+.services__text div{
+    visibility: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 21%;
+    color: rgb(254, 255, 228);
+    border: 4px solid #2B2D2C ;
+    border-radius: 8%;
+    background-color: #1D1E1D ;
+}
+
+.services__text h3{
+    margin: 0;
+    margin-top: 10px;
+    text-align: center;
+    font-family: "grotesk-titles";
+    font-size: 23px;
+}
+
+.services__text ul{
+    margin-top: 10px;
+    padding-left: 2.4em;
+    font-family: "grotesk-content";
+    font-size: 20px;
+}
+
+.instruction-text{
+    position: absolute;
+    font-size: 70px;
+    color: #2b2c2b ;
+    font-family: "steelfish";
+}
+
+.social{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social__text{
+    width: 36%;
+    color: rgb(254, 255, 228);
+    padding-top: 4em;
+    padding-left: 2.6em;
+}
+
+.social__text h2{
+    margin-bottom: 0;
+    font-family: "grotesk-titles";
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.social__text span{
+    font-family: "grotesk-titles";
+    font-size: 60px;
+    color: rgb(46, 184, 114);  
+}
+
+.social__icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 6em 9em 1em 9em;
+}
+
+.social__icons div{
+    width: 4em;
+    padding: 0 6em 0 6em;
+}
+
+.social__icons img{
+    width: 100%;
+}
+
+.social__icons-text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 59%;
+    text-align: center;
+    margin-left: 10em;
+    padding-bottom: 10.8em;
+    color: rgb(254, 255, 228);
+}
+
+.social__icons-text div{
+    width: 8em;
+    padding: 0 2.3em 0 1.2em;
+    font-family: "grotesk-content";
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.social__icons-text p{
+    margin-top: 0;
+}
+.greenlines-social{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+}
+
+.contact{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 1em;
+}
+
+.inverted-lines{
+    position: absolute;
+    z-index: -1;
+}
+
+.contact__empty-div{
+    width: 65.7%;
+    padding-bottom: 7em;
+    border-top: 2px solid rgb(46, 184, 114);
+    border-bottom-right-radius: 100%;
+    border-top-width: 2px;
+}
+
+.contact .watermark{
+    right: 2em;
+}
+
+.contact__title{
+    width: 60%;
+    padding-top: 6em;
+    padding-bottom: 13.8em;
+    color: rgb(254, 255, 228);
+    text-align: center;
+}
+
+.contact__title h2{
+    margin-bottom: 0;
+    font-family: "grotesk-titles";
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.contact__content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 39%;
+}
+
+.contact__content div{
+    width: 50%;
+    margin-left: 2em;
+    font-family: "grotesk-content";
+    color: rgb(254, 255, 228);
+    font-size: 22px;
+}
+
+.cel h3{
+    margin-bottom: 0;
+    color: rgb(46, 184, 114);
+}
+
+.cel p{
+    margin-bottom: 0;
+}
+
+.email h3{   
+    margin-top: 0;
+    color: rgb(46, 184, 114);
+}
+
+@media (max-width: 790px) {
+    
+    .menubox{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 2em 0 1.5em 0;
+    }
+
+    .contacto{
+        margin-right: 2em;
+    }
+
+    .main-menu{
+        white-space: nowrap;
+        overflow-x: scroll;
+    }
+  
+    .main-menu li{
+        padding: 0 1em 0 1em;
+        display: inline;
+    }
+
+    .main-menu li:hover{
+        padding: 5px 1em 2px 1em;
+        color: rgb(11, 11, 11);
+        background-color: rgb(254, 255, 228);
+    }
+
+    .logo-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-top: 4em;
+    }
+
+    .logo__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .logo-box__logo{
+        padding-bottom: 2em;
+    }
+
+
+    
+    .logo-box__title{
+        width: 3.4em;
+        display: block;
+        margin: 0;
+        letter-spacing: 0.078em;
+        transform: scaleY(0.87);
+        color: rgb(254, 255, 228);
+        font-size: 5.5em;
+        font-family: "steelfish";
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    .logo-box__subtitle{
+        width: 15.4em;
+        letter-spacing: 0.278em;
+        transform: scaleY(0.9);
+        color: rgb(254, 255, 228);
+        font-family: "tomatoround";
+        font-size: 19.4px;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    .logo-box__titlebox{
+        width: 79%;
+    }    
+
+    .quoteBox{
+        padding: 4em 1em 0 1em;
+        text-align: center;
+        width: 100%;
+    }
+
+    .watermark{
+        visibility: hidden;
+    }
+
+    .green-lines{
+        visibility: hidden;
+    }
+
+    .quienesSomos__img-box{
+        display: none;
+    }
+
+    .emptyBox{
+        width: 100%;
+        padding: 0;
+    }
+
+    .quienesSomos-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .quienesSomos__description-box{
+        width: 100%;
+        padding: 2em 0 0 0;
+        color: rgb(254, 255, 228);
+    }
+    
+    .quienesSomos__description-box h2{
+        margin: 0;
+        padding: 0;
+        font-family: "grotesk-titles";
+        font-weight: bold;
+        font-size: 42px;
+        text-align: center;
+    }
+    
+    .quienesSomos__description-box span{
+        font-family: "grotesk-titles";
+        color: rgb(46, 184, 114);
+        font-size: 42px;
+    }
+    
+    .quienesSomos__description-box p{
+        padding: 0 1em 0 1em;
+        font-size: 20px;
+        font-family: "grotesk-content";
+    }
+
+    .gallery__text-box{
+        padding: 2em 0 0 0;
+        width: 100%;
+        text-align: left;
+        color: rgb(254, 255, 228);
+    }
+
+    .gallery__text-box h2{
+        margin: 0;
+        padding: 0;
+        font-family: "grotesk-titles";
+        font-weight: bold;
+        font-size: 42px;
+        text-align: center;
+    }
+    
+    .gallery__text-box span{
+        font-family: "grotesk-titles";
+        color: rgb(46, 184, 114);
+        font-size: 42px;
+    }
+    
+    .gallery__text-box p{
+        padding: 0 1em 0 1em;
+        margin-bottom: 0;
+        font-size: 20px;
+        font-family: "grotesk-content";
+    }
+
+    .gallery__images{
+        display: flex;
+        width: 100%;
+    }
+
+    .images__col1{
+        width: 48%;
+    }
+    
+    .images__col2{
+        width: 48%;
+    } 
+
+    .services__title-box{
+        padding: 2em 0 0 0;
+        color: rgb(254, 255, 228);
+    }
+    
+    .services__title-box h2{
+        margin: 0;
+        padding: 0;
+        font-family: "grotesk-titles";
+        font-weight: bold;
+        font-size: 42px;
+        text-align: center;
+    }
+    
+    .services__title-box span{
+        font-family: "grotesk-titles";
+        color: rgb(46, 184, 114);
+        font-size: 42px;
+    }
+
+    .services__images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        padding-top: 2em;
+    }
+    
+    .services__images div{
+        width: 48%;
+    }
+    
+    .services__images div img{
+        width: 100%;
+        border-radius: 8%;
+    }
+
+    .instruction-text{
+        display: none;
+    }
+
+    .services__text{
+        display: none;
+    }
+
+    .services__phone{
+        position: absolute;
+        color: rgb(254, 255, 228);
+    }
+
+    .services__phone h3{
+     margin-top: 0;
+     font-family: "grotesk-titles";
+    }
+
+    .services__phone ul{
+        padding-left: 1em;
+        font-family: "grotesk-content";
+    }
+
+    .social__text{
+        padding: 0;
+        width: 100%;
+        color: rgb(254, 255, 228);
+        text-align: center;
+    }
+
+    .social__text h2{
+        margin-bottom: 0;
+        font-family: "grotesk-titles";
+        font-weight: bold;
+        font-size: 42px;
+    }
+    
+    .social__text span{
+        font-family: "grotesk-titles";
+        font-size: 42px;
+        color: rgb(46, 184, 114);  
+    }
+
+    .social__icons{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        width: 100%;
+        padding: 4em 0 0 0;
+    }
+    
+    .social__icons div{
+        padding: 1em;
+        width: 20%;
+    }
+    
+    .social__icons img{
+        padding: 0;
+        width: 100%;
+    }
+
+    .social__icons-text{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 0;
+        color: rgb(254, 255, 228);
+    }
+    
+    .social__icons-text div{
+        width: 8em;
+        padding: 0;
+        padding-bottom: 8em;
+        font-family: "grotesk-content";
+        font-weight: bold;
+        font-size: 17px;
+    }
+    
+    .social__icons-text p{
+        padding: 0;
+        margin: 0;
+    }
+
+    .contact{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding : 0;
+    }
+
+    .contact__empty-div{
+        display: none;
+    }
+
+    .contact__title{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        color: rgb(254, 255, 228);
+    }
+
+    .contact__title h2{
+        margin-bottom: 0;
+        font-family: "grotesk-titles";
+        font-weight: bold;
+        font-size: 42px;
+    }
+    
+    .contact__content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        padding-top: 2em;
+        padding-bottom: 6.5em;
+    }
+    
+    .contact__content div{
+        width: 70%;
+        margin: 0;
+        font-family: "grotesk-content";
+        color: rgb(254, 255, 228);
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .contact__content div p{
+        margin-top: 10px;
+    }
+
+    .email h3{   
+        margin-top: 2em;
+        margin-bottom: 0;
+        color: rgb(46, 184, 114);
+    }
+    
+    .greenlines-social{
+        visibility: hidden;
+    }
+
+
+
+
+
+
+
+  }
+
