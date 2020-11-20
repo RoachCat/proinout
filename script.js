@@ -17,11 +17,12 @@ let nextSibl
 
 for (let i = 0; i < servicesDivImgs.length; i++) {
     if (width > 790) {
+        instructionText.appendChild(text)
+        servicesText.appendChild(instructionText)
         servicesDivImgs[i].addEventListener('mouseover', () => {
             servicesDivText[i].style.visibility = "visible"
             instructionText.remove()
         })
-
         servicesDivImgs[i].addEventListener('mouseout', () => {
             servicesDivText[i].style.visibility = "hidden"
             instructionText.appendChild(text)
@@ -30,8 +31,8 @@ for (let i = 0; i < servicesDivImgs.length; i++) {
     } else {
         servicesDivImgs[i].addEventListener('mousedown', (e) => {
             if (clicked) {
-                instructionText.remove()           
-                elemClicked.style.display = "block"  
+                instructionText.remove()
+                elemClicked.style.display = "block"
                 nextSibl.style.display = "none"
             }
             nextSibl = e.target.nextElementSibling
@@ -42,9 +43,7 @@ for (let i = 0; i < servicesDivImgs.length; i++) {
             elemClicked = e.target
             clicked = true
         })
-
-
     }
-
 }
+
 

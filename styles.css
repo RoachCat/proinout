@@ -339,6 +339,7 @@ body{
 }
 
 .instruction-text{
+    display: block;
     position: absolute;
     font-size: 70px;
     color: #2b2c2b ;
